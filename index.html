@@ -10,7 +10,34 @@
 <script>
 const box=document.getElementById("messages"),chat=document.getElementById("chat");function add(t,c){let d=document.createElement("div");d.className="msg "+c;d.textContent=t;box.appendChild(d);box.scrollTop=box.scrollHeight;return d}
 async function send(){let m=chat.value.trim();if(!m)return;add(m,"user");chat.value="";let t=add("Thinking…","ai");try{let r=await fetch("/api/chat",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({message:m})}),d=await r.json();t.remove();add(d.reply||d.error,"ai")}catch{t.remove();add("Please call +254 714 567 192.","ai")}}
-function ask(x){chat.value=x;send()}chat.addEventListener("keydown",e=>{if(e.key==="Enter")send()});
+function showCourses(){
+add("🎓 COURSES OFFERED AT ELITE TECHNICAL TRAINING INSTITUTE:\n\n"+
+"1. Hair Dressing & Hair Technology\n"+
+"2. Nail Technology\n"+
+"3. Beauty Therapy\n"+
+"4. Cosmetology\n"+
+"5. Barbering\n"+
+"6. Catering\n"+
+"7. Food and Beverage Production\n"+
+"8. Front Office\n"+
+"9. Food and Beverage Service\n"+
+"10. Hotel & Restaurant Management\n"+
+"11. Housekeeping & Accommodations\n"+
+"12. Events Management\n"+
+"13. Cake Baking\n"+
+"14. Computer Studies\n"+
+"15. Computer Networking\n"+
+"16. Graphics and Multimedia\n"+
+"17. Web Design and Development\n"+
+"18. Computer Repair and Maintenance\n"+
+"19. Information Technology (IT)\n"+
+"20. Video Recording, Editing & Production\n"+
+"21. Film and Media Production\n"+
+"22. Photography\n\n"+
+"📞 For admission and more information, call +254 714 567 192.","ai");
+}
+function ask(x){chat.value=x;send()}
+chat.addEventListener("keydown",e=>{if(e.key==="Enter")send()});;
 async function apply(){let r=await fetch("/api/applications",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({name:name.value,phone:phone.value,email:email.value,course:course.value,level:level.value,message:message.value})});let d=await r.json();result.textContent=" "+(d.message||d.error);if(r.ok){ref.value=d.reference}}
 async function check(){let r=await fetch("/api/application/"+encodeURIComponent(ref.value.trim().toUpperCase()));let d=await r.json();checkResult.textContent=r.ok?`Reference: ${d.reference} | Course: ${d.course||"-"} | Status: ${d.status} | Submitted: ${new Date(d.created_at).toLocaleString()}`:d.error}
 </script></body></html>
