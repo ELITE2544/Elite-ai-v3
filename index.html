@@ -1,16 +1,71 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title>Elite Technical Training Institute | Courses in Laikipia</title>
 
-<meta name="description" content="Elite Technical Training Institute in Wiyumiririe, Laikipia offers practical training in hairdressing, cosmetology, barbering, catering, cake baking, computer studies, IT, and video production.">
+  <meta charset="utf-8">
 
-<meta name="google-site-verification" content="MbkjmcmayQN6ajh3vLAeipbZlUoPPtIwt-QbM1xGLrE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Elite Technical Training Institute | TVET Courses in Laikipia</title>
+
+  <meta name="description"
+    content="Elite Technical Training Institute in Wiyumiririe, Laikipia offers practical technical and vocational training including hairdressing, beauty therapy, cosmetology, barbering, catering, hospitality, cake baking, computer studies, IT, networking, web design, photography and media production.">
+
+  <meta name="keywords"
+    content="Elite Technical Training Institute, technical college Laikipia, TVET college Laikipia, vocational training Laikipia, colleges in Laikipia, courses in Laikipia, Wiyumiririe college, computer courses Laikipia, hairdressing courses Laikipia, beauty courses Laikipia, catering courses Laikipia, hospitality courses Laikipia, IT courses Laikipia">
+
+  <meta name="author" content="Elite Technical Training Institute">
+
+  <meta name="robots" content="index, follow">
+
+  <meta name="googlebot" content="index, follow">
+
+  <meta name="google-site-verification"
+    content="MbkjmcmayQN6ajh3vLAeipbZlUoPPtIwt-QbM1xGLrE">
+
+  <link rel="canonical"
+    href="https://elite2544.github.io/Elite-ai-v3/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+
+  <meta property="og:title"
+    content="Elite Technical Training Institute | TVET Courses in Laikipia">
+
+  <meta property="og:description"
+    content="Practical technical and vocational training in Wiyumiririe, Laikipia. Explore computer, beauty, hairdressing, catering, hospitality, baking, photography and media courses.">
+
+  <meta property="og:url"
+    content="https://elite2544.github.io/Elite-ai-v3/">
+
+  <meta property="og:site_name"
+    content="Elite Technical Training Institute">
+
+
+  <!-- Structured Data for Google -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "Elite Technical Training Institute",
+    "alternateName": "Elite Tech",
+    "url": "https://elite2544.github.io/Elite-ai-v3/",
+    "telephone": "+254714567192",
+    "description": "Elite Technical Training Institute in Wiyumiririe, Laikipia offering practical technical and vocational training.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Wiyumiririe",
+      "addressRegion": "Laikipia",
+      "addressCountry": "KE"
+    },
+    "areaServed": "Laikipia County, Kenya",
+    "sameAs": []
+  }
+  </script>
+
 
 <style>
+
 :root{
   --p:#172b72;
   --a:#7b35c8;
@@ -21,26 +76,37 @@
   box-sizing:border-box
 }
 
+html{
+  scroll-behavior:smooth
+}
+
 body{
   margin:0;
   font-family:Arial,sans-serif;
   background:var(--bg);
-  color:#182033
+  color:#182033;
+  line-height:1.6
 }
 
 header{
   background:linear-gradient(135deg,var(--p),var(--a));
   color:#fff;
   text-align:center;
-  padding:30px 16px
+  padding:38px 16px
 }
 
-h1{
-  margin:0 0 7px
+header h1{
+  margin:0 0 8px;
+  font-size:32px
+}
+
+header p{
+  margin:5px auto;
+  max-width:750px
 }
 
 .wrap{
-  max-width:900px;
+  max-width:950px;
   margin:22px auto;
   padding:0 14px
 }
@@ -48,9 +114,13 @@ h1{
 .card{
   background:#fff;
   border-radius:18px;
-  margin-bottom:18px;
+  margin-bottom:20px;
   box-shadow:0 8px 30px #0001;
   overflow:hidden
+}
+
+.section{
+  padding:24px
 }
 
 .quick{
@@ -66,7 +136,35 @@ h1{
   padding:10px;
   border-radius:9px;
   color:var(--p);
-  font-weight:700
+  font-weight:700;
+  cursor:pointer
+}
+
+h2{
+  color:var(--p);
+  margin-top:0
+}
+
+h3{
+  color:var(--p)
+}
+
+.intro{
+  font-size:17px
+}
+
+.courses{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+  padding:0;
+  list-style:none
+}
+
+.courses li{
+  background:#f5f7fb;
+  padding:11px;
+  border-radius:9px
 }
 
 #messages{
@@ -117,7 +215,8 @@ h1{
   color:#fff;
   border-radius:9px;
   padding:12px 16px;
-  font-weight:700
+  font-weight:700;
+  cursor:pointer
 }
 
 .form{
@@ -145,10 +244,27 @@ h1{
 .contact{
   text-align:center;
   color:#667085;
-  margin:20px
+  margin:25px 10px
+}
+
+footer{
+  background:#172b72;
+  color:#fff;
+  text-align:center;
+  padding:22px 15px;
+  margin-top:30px
+}
+
+footer a{
+  color:#fff
 }
 
 @media(max-width:600px){
+
+  header h1{
+    font-size:25px
+  }
+
   .formgrid{
     grid-template-columns:1fr
   }
@@ -160,124 +276,316 @@ h1{
   #messages{
     height:50vh
   }
+
+  .courses{
+    grid-template-columns:1fr
+  }
+
+  .compose{
+    flex-direction:column
+  }
+
 }
+
 </style>
+
 </head>
+
 
 <body>
 
+
 <header>
-  <h1>🤖 Elite AI</h1>
-  <div>Your 24/7 Training & Career Assistant</div>
+
+  <h1>Elite Technical Training Institute</h1>
+
+  <p>
+    Practical Technical and Vocational Training in Wiyumiririe, Laikipia, Kenya
+  </p>
+
+  <p>
+    Transforming Lives Through Instilling Technical Skills
+  </p>
+
 </header>
+
 
 <main class="wrap">
 
+
+<!-- INTRODUCTION -->
+
+<section class="card section">
+
+  <h2>Elite Technical Training Institute in Laikipia</h2>
+
+  <p class="intro">
+    <strong>Elite Technical Training Institute</strong> is a technical and vocational
+    training institution located in <strong>Wiyumiririe, Laikipia County, Kenya</strong>.
+    We provide practical skills and career-focused training in beauty and hair,
+    hospitality, baking, computing, information technology, photography and media.
+  </p>
+
+  <p>
+    Our goal is to equip learners with practical technical skills that can help them
+    build careers, start businesses and become self-reliant.
+  </p>
+
+  <p>
+    For admission and course information, contact us on
+    <strong>+254 714 567 192</strong>.
+  </p>
+
+</section>
+
+
+<!-- COURSES -->
+
+<section class="card section" id="courses">
+
+  <h2>Courses Offered at Elite Technical Training Institute</h2>
+
+  <p>
+    Explore our practical technical, vocational, computer, beauty, hospitality
+    and media training courses in Laikipia.
+  </p>
+
+  <ul class="courses">
+
+    <li>Hair Dressing &amp; Hair Technology</li>
+
+    <li>Nail Technology</li>
+
+    <li>Beauty Therapy</li>
+
+    <li>Cosmetology</li>
+
+    <li>Barbering</li>
+
+    <li>Catering</li>
+
+    <li>Food and Beverage Production</li>
+
+    <li>Front Office</li>
+
+    <li>Food and Beverage Service</li>
+
+    <li>Hotel &amp; Restaurant Management</li>
+
+    <li>Housekeeping &amp; Accommodation</li>
+
+    <li>Events Management</li>
+
+    <li>Cake Baking</li>
+
+    <li>Computer Studies</li>
+
+    <li>Computer Networking</li>
+
+    <li>Graphics and Multimedia</li>
+
+    <li>Web Design and Development</li>
+
+    <li>Computer Repair and Maintenance</li>
+
+    <li>Information Technology (IT)</li>
+
+    <li>Video Recording, Editing &amp; Production</li>
+
+    <li>Film and Media Production</li>
+
+    <li>Photography</li>
+
+  </ul>
+
+</section>
+
+
+<!-- AI ASSISTANT -->
+
 <section class="card">
 
-<div class="quick">
+  <div class="quick">
 
-<button onclick="showCourses()">🎓 Courses</button>
+    <button onclick="showCourses()">🎓 Courses</button>
 
-<button onclick="ask('What are the admission requirements?')">
-📋 Admission
-</button>
+    <button onclick="ask('What are the admission requirements?')">
+      📋 Admission
+    </button>
 
-<button onclick="ask('How long are the courses?')">
-⏱ Duration
-</button>
+    <button onclick="ask('How long are the courses?')">
+      ⏱ Duration
+    </button>
 
-<button onclick="ask('Help me choose a course.')">
-💡 Career guidance
-</button>
+    <button onclick="ask('Help me choose a course.')">
+      💡 Career guidance
+    </button>
 
-<button onclick="ask('Where is the college located?')">
-📍 Location
-</button>
+    <button onclick="ask('Where is the college located?')">
+      📍 Location
+    </button>
 
-</div>
-
-<div id="messages">
-
-<div class="msg ai">
-👋 Hello! I'm Elite AI, the virtual assistant for Elite Technical Training Institute. How can I help you today?
-</div>
-
-</div>
-
-<div class="compose">
-
-<input id="chat" placeholder="Ask Elite AI anything...">
-
-<button class="btn" onclick="send()">
-Send
-</button>
-
-</div>
-
-</section>
+  </div>
 
 
-<section class="card form">
+  <div id="messages">
 
-<h2>📝 Apply / Request Information</h2>
+    <div class="msg ai">
 
-<div class="formgrid">
+      👋 Hello! I'm Elite AI, the virtual assistant for Elite Technical Training Institute.
+      How can I help you today?
 
-<input id="name" placeholder="Full name *">
+    </div>
 
-<input id="phone" placeholder="Phone number *">
+  </div>
 
-<input id="email" type="email" placeholder="Email (optional)">
 
-<input id="course" placeholder="Course interested in">
+  <div class="compose">
 
-<input id="level" placeholder="Level: Short / Certificate / Diploma">
+    <input
+      id="chat"
+      placeholder="Ask Elite AI about courses, admission or careers..."
+      aria-label="Ask Elite AI">
 
-<textarea id="message" placeholder="Your enquiry"></textarea>
+    <button class="btn" onclick="send()">
+      Send
+    </button>
 
-</div>
-
-<br>
-
-<button type="button" class="btn" onclick="apply()">
-Submit Enquiry
-</button>
-
-<span id="result"></span>
+  </div>
 
 </section>
 
 
+<!-- ADMISSION -->
+
+<section class="card section">
+
+  <h2>Admissions and Enquiries</h2>
+
+  <p>
+    Interested in joining Elite Technical Training Institute?
+    Submit your enquiry below and our team will contact you.
+  </p>
+
+  <p>
+    We welcome enquiries about courses, admission requirements, course duration,
+    fees and career guidance.
+  </p>
+
+</section>
+
+
+<!-- APPLICATION FORM -->
+
 <section class="card form">
 
-<h2>🔎 Check Application</h2>
+  <h2>📝 Apply / Request Information</h2>
 
-<div class="compose" style="padding:0">
+  <div class="formgrid">
 
-<input id="ref" placeholder="Enter reference e.g. ETTI-2026-ABC123">
+    <input id="name" placeholder="Full name *">
 
-<button class="btn" onclick="check()">
-Check
-</button>
+    <input id="phone" placeholder="Phone number *">
 
-</div>
+    <input id="email" type="email" placeholder="Email (optional)">
 
-<p id="checkResult"></p>
+    <input id="course" placeholder="Course interested in">
+
+    <input id="level" placeholder="Level: Short / Certificate / Diploma">
+
+    <textarea id="message"
+      placeholder="Your enquiry"></textarea>
+
+  </div>
+
+  <br>
+
+  <button type="button" class="btn" onclick="apply()">
+    Submit Enquiry
+  </button>
+
+  <span id="result"></span>
+
+</section>
+
+
+<!-- APPLICATION CHECK -->
+
+<section class="card form">
+
+  <h2>🔎 Check Application</h2>
+
+  <div class="compose" style="padding:0">
+
+    <input
+      id="ref"
+      placeholder="Enter reference e.g. ETTI-2026-ABC123">
+
+    <button class="btn" onclick="check()">
+      Check
+    </button>
+
+  </div>
+
+  <p id="checkResult"></p>
+
+</section>
+
+
+<!-- LOCATION -->
+
+<section class="card section">
+
+  <h2>📍 Location</h2>
+
+  <p>
+    <strong>Elite Technical Training Institute</strong><br>
+    Wiyumiririe Town, Laikipia County, Kenya<br>
+    Nyeri–Nyahururu Highway
+  </p>
+
+  <p>
+    📞 Phone:
+    <a href="tel:+254714567192">
+      +254 714 567 192
+    </a>
+  </p>
 
 </section>
 
 
 <div class="contact">
-Elite Technical Training Institute · Wiyumiririe Town, Laikipia · Nyeri–Nyahururu Highway · +254 714 567 192
+
+  Elite Technical Training Institute · Wiyumiririe Town, Laikipia ·
+  Nyeri–Nyahururu Highway ·
+  <a href="tel:+254714567192">+254 714 567 192</a>
+
 </div>
+
 
 </main>
 
 
+<footer>
+
+  <strong>Elite Technical Training Institute</strong>
+
+  <p>
+    Transforming Lives Through Instilling Technical Skills
+  </p>
+
+  <p>
+    Wiyumiririe, Laikipia, Kenya
+  </p>
+
+</footer>
+
+
 <script>
 
+
 const box = document.getElementById("messages");
+
 const chat = document.getElementById("chat");
 
 
@@ -294,6 +602,7 @@ function add(t,c){
   box.scrollTop = box.scrollHeight;
 
   return d;
+
 }
 
 
@@ -312,26 +621,38 @@ async function send(){
   try{
 
     let r = await fetch("/api/chat",{
+
       method:"POST",
+
       headers:{
         "Content-Type":"application/json"
       },
+
       body:JSON.stringify({
         message:m
       })
+
     });
 
     let d = await r.json();
 
     t.remove();
 
-    add(d.reply || d.error || "Please call +254 714 567 192.","ai");
+    add(
+      d.reply ||
+      d.error ||
+      "Please call +254 714 567 192.",
+      "ai"
+    );
 
   }catch{
 
     t.remove();
 
-    add("Please call +254 714 567 192.","ai");
+    add(
+      "Please call +254 714 567 192.",
+      "ai"
+    );
 
   }
 
@@ -341,7 +662,9 @@ async function send(){
 function showCourses(){
 
   add(
+
 "🎓 COURSES OFFERED AT ELITE TECHNICAL TRAINING INSTITUTE:\n\n"+
+
 "1. Hair Dressing & Hair Technology\n"+
 "2. Nail Technology\n"+
 "3. Beauty Therapy\n"+
@@ -364,8 +687,11 @@ function showCourses(){
 "20. Video Recording, Editing & Production\n"+
 "21. Film and Media Production\n"+
 "22. Photography\n\n"+
+
 "📞 For admission and more information, call +254 714 567 192.",
+
 "ai"
+
   );
 
 }
@@ -383,29 +709,41 @@ function ask(x){
 chat.addEventListener("keydown",e=>{
 
   if(e.key==="Enter"){
+
     send();
+
   }
 
 });
 
 
 /* =========================================
-   FORMspree ENQUIRY FORM
+   FORMSPREE ENQUIRY FORM
    ========================================= */
 
 async function apply(){
 
-  const result = document.getElementById("result");
+  const result =
+    document.getElementById("result");
 
-  const name = document.getElementById("name").value.trim();
-  const phone = document.getElementById("phone").value.trim();
-  const email = document.getElementById("email").value.trim();
-  const course = document.getElementById("course").value.trim();
-  const level = document.getElementById("level").value.trim();
-  const message = document.getElementById("message").value.trim();
+  const name =
+    document.getElementById("name").value.trim();
 
+  const phone =
+    document.getElementById("phone").value.trim();
 
-  /* Check required information */
+  const email =
+    document.getElementById("email").value.trim();
+
+  const course =
+    document.getElementById("course").value.trim();
+
+  const level =
+    document.getElementById("level").value.trim();
+
+  const message =
+    document.getElementById("message").value.trim();
+
 
   if(!name || !phone){
 
@@ -413,43 +751,60 @@ async function apply(){
       " ❌ Please enter your full name and phone number.";
 
     return;
+
   }
 
 
-  result.textContent = " ⏳ Sending enquiry...";
+  result.textContent =
+    " ⏳ Sending enquiry...";
 
 
   const formData = new FormData();
 
   formData.append("name",name);
+
   formData.append("phone",phone);
+
   formData.append("email",email);
+
   formData.append("course",course);
+
   formData.append("level",level);
+
   formData.append("message",message);
 
 
   try{
 
     const response = await fetch(
+
       "https://formspree.io/f/mwlengpa",
+
       {
+
         method:"POST",
+
         body:formData,
+
         headers:{
           "Accept":"application/json"
         }
+
       }
+
     );
 
 
-    const responseText = await response.text();
+    const responseText =
+      await response.text();
 
     let data = {};
 
+
     try{
 
-      data = JSON.parse(responseText);
+      data =
+        JSON.parse(responseText);
 
     }catch{
 
@@ -465,10 +820,15 @@ async function apply(){
 
 
       document.getElementById("name").value = "";
+
       document.getElementById("phone").value = "";
+
       document.getElementById("email").value = "";
+
       document.getElementById("course").value = "";
+
       document.getElementById("level").value = "";
+
       document.getElementById("message").value = "";
 
 
@@ -502,7 +862,11 @@ async function apply(){
 async function check(){
 
   const reference =
-    document.getElementById("ref").value.trim().toUpperCase();
+    document.getElementById("ref")
+      .value
+      .trim()
+      .toUpperCase();
+
 
   const checkResult =
     document.getElementById("checkResult");
@@ -521,18 +885,30 @@ async function check(){
   try{
 
     let r = await fetch(
+
       "/api/application/" +
       encodeURIComponent(reference)
+
     );
 
-    let d = await r.json();
+
+    let d =
+      await r.json();
+
 
     checkResult.textContent =
+
       r.ok
+
       ?
+
       `Reference: ${d.reference} | Course: ${d.course || "-"} | Status: ${d.status} | Submitted: ${new Date(d.created_at).toLocaleString()}`
+
       :
-      d.error || "Application not found.";
+
+      d.error ||
+      "Application not found.";
+
 
   }catch{
 
@@ -544,6 +920,7 @@ async function check(){
 }
 
 </script>
+
 
 </body>
 </html>
